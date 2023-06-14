@@ -1,0 +1,104 @@
+*{ /* sirve para eliminar la pequeña linea de la pagina  */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* esta propiedad me ayuda a que las medidas se sumen de manera completa */
+    max-width: 100%;
+}
+
+/*===================BARRA DE MENU=========================*/
+#menu{
+    background-color: orange;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+#menu ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+#menu ul li{
+    display: inline-block;
+}
+#menu ul li a{
+    color:white;
+    display: block;
+    padding: 20px 80px;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    background-color:black;
+}
+
+/*=================CONTENEDOR DE PRODUCTO=================*/
+
+/*==========================FOOT=========================*/
+#pie{
+    background-color: black;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 12px;
+    color: white;
+}
+#pie p{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px; ;
+}
+/*=================CONTENEDOR DE PRODUCTO=================*/
+.page-content{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product-container{
+    margin: 15px;
+    border: 1px solid black;
+    text-align: center;
+    /* width: 473.89px;
+    height: 623.25px; */
+    width: 400px;
+    height: 600px;
+    flex-wrap: wrap;
+}
+.product-container img {
+    width: 400px;
+}
+.product-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  h1.titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 70px;
+  }
+h3{
+    font-family:'Open Sans', sans-serif;
+    width: px;
+}
+/*=================BOTON DE COMPRA=================*/
+.button {
+    background-color: white; /* white */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  .button{
+    background-color: white; 
+    color: black; 
+    border: 2px solid orange;
+  }
+  .button:hover {
+    background-color: orange;
+    color: white;
+}

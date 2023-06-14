@@ -1,0 +1,155 @@
+*{ /* sirve para eliminar la pequeña linea de la pagina  */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* esta propiedad me ayuda a que las medidas se sumen de manera completa */
+    max-width: 100%;
+}
+/*===================BARRA DE MENU=========================*/
+#menu{
+    background-color: orange;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+#menu ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+#menu ul li{
+    display: inline-block;
+}
+#menu ul li a{
+    color:white;
+    display: block;
+    padding: 20px 80px;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    background-color:black;
+}
+/*==========================BODY=========================*/
+body{
+    background-image: radial-gradient(circle at 64.61% 48.72%, #819a98 0, #6b8d8c 16.67%, #4f7c7d 33.33%, #2a686d 50%, #00555e 66.67%, #004552 83.33%, #00384a 100%);
+}
+#body-formCompra{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffff89 0, #ffff80 16.67%, #fcf176 33.33%, #d8d86c 50%, #b7bf62 66.67%, #9aa859 83.33%, #819351 100%);
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 55px;
+}
+h1.titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 55px;
+}
+a{
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    line-height: 2em;    
+    letter-spacing: .03rem;
+    padding: 10px;
+}
+/*==========================FOOT=========================*/
+#pie{
+    background-color: black;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 12px;
+    color:  white;
+}
+#pie p{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px; ;
+}
+/*=================CONTENEDOR DE PRODUCTO=================*/
+.page-content{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.product-container{
+    margin: 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+.product-container img {
+    width: 400px;
+}
+.product-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+h3{
+    font-family:'Open Sans', sans-serif;
+}
+/*==========================TABLE=========================*/
+table,td {
+	border: 1px solid black;
+    
+}
+/*=================BOTON DE COMPRA=================*/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  .button{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  .button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+}
+/*=================BOTONES DEL FORMULARIO=================*/
+input{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.input{
+    background-color: white; 
+    color: black; 
+    border: 2px solid orange;
+}
+input:hover{
+    background-color: orange;
+    color: white;
+}
+textarea{
+    color: black;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+}

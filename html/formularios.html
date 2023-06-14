@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilo.css">
+	<title>Formulario de registro</title>
+        <meta name="keywords" content="basketshp, tienda, tienda de jerseys, tienda de baloncesto, camisetas de baloncesto">
+        <link name="author" href="https://www.linkedin.com/in/juan-daniel-galeano-navarro-47859b270/">
+        <link rel="icon" href="../img/registro.png" type="image/png">
+</head>
+<body>
+        <h1>Formulario de registro</h1>
+        <!--Menu de opciones-->
+        <header align="center">
+        <div id="menu">
+                
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+                <li><a href="formularios.html">Registro</a></li>
+            </ul>
+                </div>
+        </header>
+	<h1>¡Haz parte de nuestra familia!</h1><br>
+        <div id="menu"></div>
+
+	<form style="text-align: center;" method="get" accept-charset="utf-8">
+        <div>
+                 <!--NOMBRE-->
+                <p> Nombres: <input type="text" name="name" maxlength="30" placeholder="INGRESE NOMBRE" required/></p>
+                <!--APELLIDOS-->
+                <p>Apellidos: <input type="text" name="last_name" maxlength="30" placeholder="INGRESE APELLIDOS" required></p>
+        
+        </div>
+        <!--GENERO-->
+        <div>
+                Sexo: <input type="radio" name="gen" value="gen_m">Masculino
+                <input type="radio" name="gen" value="gen_f">Femenino
+                <input type="radio" name="gen" value="gen o">Otro
+        </div>
+        <!--CONTRASEÑA-->
+        <div>
+                <p> Contraseña: <input  type="password" name="pass" minlength="8" maxlength="16" placeholder="min 8 caracteres max 16" required/> </p>
+        </div>
+        <!--CORREO ELECTRONICO-->
+        <div>
+                <p>Correo Electrónico: <input  type="email" name="email" placeholder="correo@ejemplo.com" required/></p>
+        </div>
+        <!--FECHA DE NACIMIENTO-->
+        <div>
+                <p>Fecha de nacimiento: <input  type="date" name="date" required /></p>
+        </div>
+        <!--TELEFONO-->
+        <div>
+                <p> Teléfono: <input  type="tel" name="tel_control" placeholder="315 586 4126" maxlength="10" required /></p>
+        </div>
+        <!--TIPO DE SANGRE-->
+        <div>
+                <p>¿Qué tipo de sangre tiene?</p>
+                <select name="sangre">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="0+">O+</option>
+                        <option value="0-">O-</option>
+        
+                </select>
+        </div>
+        <br>
+        <!--BOTONES-->
+	<div>
+                <input class="validar"  id="botonCompra2" type="submit" value="Enviar">
+		<input class="validar" type="reset" value="Borrar">
+        </div>
+        <br>
+        <br>       
+		 <!--Pie de pagina-->
+                 <footer id="pie">
+                        <div align="center">
+                            <p>Juan Daniel Galeano</p>
+                            <p>Cod: 192016</p>
+                            <span id="año-actual"></span>
+                        </div>
+                    </footer>
+	</form>
+        <script src="../js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

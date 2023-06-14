@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Galería de imágenes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100,300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            /* sirve para eliminar la pequeña linea de la pagina  */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* esta propiedad me ayuda a que las medidas se sumen de manera completa */
+        }
+
+        body {
+            background-image: radial-gradient(circle at 0% 100%, #ffe687 0, #ffec7e 4.55%, #fff075 9.09%, #fff46e 13.64%, #fff768 18.18%, #fff964 22.73%, #edfb62 27.27%, #d4fb62 31.82%, #b9fa64 36.36%, #9af969 40.91%, #75f670 45.45%, #3cf278 50%, #00ee83 54.55%, #00e990 59.09%, #00e59f 63.64%, #00e2b0 68.18%, #00dec3 72.73%, #00dbd6 77.27%, #00d7ea 81.82%, #00d5fd 86.36%, #00d2ff 90.91%, #00cfff 95.45%, #00cdff 100%);
+
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        .content-form {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px;
+            margin: 40px 0;
+            justify-content: space-around;
+            background-color: white;
+        }
+
+        .title {
+            width: 100%;
+            text-align: center;
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        p.loremipsum {
+            text-align: center;
+
+        }
+
+        .content-form {
+            text-align: center;
+            align-items: center;
+        }
+
+        .content-datos input {
+
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .content-datos .input {
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+            border: 0.5em;
+        }
+
+        .content-datos p {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 10px;
+            ;
+            text-align: center;
+            align-items: center;
+        }
+
+        input .validar {
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        input .validar:hover {
+            background-color: greenyellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="content-form">
+        <div class="contenedor">
+            <div class="titulo">
+                <h1>Form Register</h1><br>
+            </div>
+            <div class="parrafo">
+                <p class="loremipsum">Lorem Ipsum es simplemente un texto ficticio de la industria de la impresión y la
+                    composición tipográfica. Lorem Ipsum ha sido el texto ficticio estándar de la industria desde el año
+                    1500, cuando un impresor desconocido tomó una galera de tipos y la codificó para hacer un libro de
+                    muestras tipográficas. Ha sobrevivido no solo cinco siglos, sino también el salto a la composición
+                    tipográfica electrónica, permaneciendo esencialmente sin cambios. Se popularizó en la década de 1960
+                    con el lanzamiento de hojas de Letraset que contenían pasajes de Lorem Ipsum y, más recientemente,
+                    con software de autoedición como Aldus PageMaker, que incluía versiones de Lorem Ipsum.</p><br>
+            </div>
+            <div class="content-datos">
+                <div>
+                    <p> Name: <input type="text" name="name" maxlength="30" placeholder="Escriba sus nombres"
+                            required /></p><br>
+                </div>
+
+                <div>
+                    <p>Last name: <input type="text" name="last_name" maxlength="30" placeholder="Escriba sus apellidos"
+                            required></p><br>
+                </div>
+
+                <div>
+                    <p>Phone: <input type="text" placeholder="Escriba su numero de telefono" required /></p><br>
+                </div>
+                <div>
+                    <p>Email: <input type="email" name="email" placeholder="Escriba su correo electrónico" required />
+                    </p><br>
+                </div>
+                <div>
+                    <p>Password: <input type="password" name="pass" minlength="8" maxlength="16"
+                            placeholder="min 8 caracteres max 16" required /> </p><br>
+                </div>
+                <div>
+                    <p>Repeat Password: <input type="password" name="pass" minlength="8" maxlength="16"
+                            placeholder="min 8 caracteres max 16" required /> </p><br>
+                </div>
+                <input class="validar" type="submit" value="Enviar"><br>
+                <input class="validar" type="reset" value="Volver atrás"><br>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+</body>
+
+</html>

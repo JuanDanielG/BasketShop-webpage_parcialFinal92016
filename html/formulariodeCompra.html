@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilo.css">
+	<title>Formulario de compra</title>
+        <meta name="keywords" content="basketshp, tienda, tienda de jerseys, tienda de baloncesto, camisetas de baloncesto">
+        <link name="author" href="https://www.linkedin.com/in/juan-daniel-galeano-navarro-47859b270/">
+        <link rel="icon" href="../img/formulariocompra.png" type="image/png">
+</head>
+<body id="body-formCompra">
+        <h1>Formulario de Compra</h1>
+        <!--Menu de opciones-->
+        <header align="center">
+        <div id="menu">
+                
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+                <li><a href="formularios.html">Registro</a></li>
+            </ul>
+                </div>
+        </header>
+	<h1>¡Rellena todos tus datos para comprar!</h1><br>
+        <div id="menu"></div>
+
+	<form style="text-align: center;" id="form" method="get" accept-charset="utf-8">
+        <div>
+                 <!--NOMBRE-->
+                <p> Nombre Completo: <input type="text" id="name" name="name" maxlength="30" placeholder="INGRESE NOMBRE" /></p>
+                
+        </div>
+        <!--GENERO-->
+        <div>
+                Sexo: <input type="radio" name="gen" value="gen_m">Masculino
+                <input type="radio" name="gen" value="gen_f">Femenino
+                <input type="radio" name="gen" value="gen o">Otro
+        </div>
+        <!--CONTRASEÑA-->
+        <div>
+                <p> Contraseña: <input  type="password" id="password" name="pass" minlength="8" maxlength="16" placeholder="min 8 caracteres max 16" /> </p>
+        </div>
+        <!--CORREO ELECTRONICO-->
+        <div>
+                <p>Correo Electrónico: <input  type="email" id="email" name="email" placeholder="correo@ejemplo.com" /></p>
+        </div>
+        <!--TELEFONO-->
+        <div>
+                <p> Teléfono: <input  type="tel" name="tel_control" placeholder="315 586 4126" maxlength="10"  /></p>
+        </div><br>
+        <!--BOTONES-->
+	<div>
+                <input class="validar" id="botonCompra" type="submit" value="Enviar">
+		<input class="validar" type="reset" value="Borrar">
+                <p class="warnings" id="warnings"></p>
+        </div>
+        <br><br><br><br><br><br><br>
+               
+		 <!--Pie de pagina-->
+                 <footer id="pie">
+                        
+                        <div align="center">
+                            <p>Juan Daniel Galeano</p>
+                            <p>Cod: 192016</p>
+                            <span id="año-actual"></span>
+                        </div>
+                    </footer>
+	</form>
+        <script src="../js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+                // Validaciones Formulario de compra
+const nombre = document.getElementById("name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const form = document.getElementById("form");
+const parrafo = document.getElementById("warnings");
+
+form.addEventListener("submit", e=>{
+  e.preventDefault() //para q
+  let warnings = ""
+  let entrar = false
+  let regexEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
+  parrafo.innerHTML = ""
+
+  if(nombre.value.length<6){
+    warnings += 'El nombre no es valido <br>'
+    entrar = true
+  }
+  if(!regexEmail.test(email.value)){
+    warnings += 'El email no es valido <br>'
+    entrar = true
+  }
+  if(password.value.length < 8){
+    warnings += 'El contraseña no es valido <br>'
+    entrar = true
+  }
+  if(entrar){
+    parrafo.innerHTML = warnings
+  }else{
+    parrafo.innerHTML = "Enviado"
+  }
+})
+        </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="keywords" content="basketshp, tienda, tienda de jerseys, tienda de baloncesto, camisetas de baloncesto">
+    <link name="author" href="https://www.linkedin.com/in/juan-daniel-galeano-navarro-47859b270/">
+    <link rel="icon" href="img/index.png" type="image/png">
+    <title>BasketShop</title>
+    
+</head>
+<body onload="cargarpagina()">
+<!--Menu de opciones-->
+    <header align="center"><h1 class="titulo">BasketShop</h1><br>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html/tienda.html">Tienda</a></li>
+                <li><a href="html/contacto.html">Contáctanos</a></li>
+                <li><a href="html/formularios.html">Registro</a></li>
+            </ul>
+        </div>
+</header>
+<!---SLIDER DE FOTOS-->
+<div class="slider" align="center">
+    <ul>
+        <li>
+            <img src="img/lakers.png">
+        </li>
+        <li>
+            <img src="img/milkwaukee.webp">
+        </li>
+        <li>
+            <img src="img/pacers.png">
+        </li>
+        <li>
+            <img src="img/raptors.png">
+        </li>
+    </ul>
+    <!--PIE DE PAGINA-->
+</div>
+    <footer id="pie">
+        <div align="center">
+            <p>Juan Daniel Galeano</p>
+            <p>Cod: 192016</p>
+            <span id="año-actual"></span>
+        </div>
+    </footer>
+<!-----------FIN------------>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        function cargarpagina() {
+            $("#validar").hide();
+            Swal.fire('Hola bienvenido a este sitio web');
+        }
+
+    </script>
+</body>
+</html>

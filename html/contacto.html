@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="keywords" content="basketshp, tienda, tienda de jerseys, tienda de baloncesto, camisetas de baloncesto">
+    <link name="author" href="https://www.linkedin.com/in/juan-daniel-galeano-navarro-47859b270/">
+    <link rel="icon" href="../img/contacto.png" type="image/png">
+</head>
+
+<body onload="cargarpagina()">
+    <header align="center">
+        <h1 class="titulo">Contactate con nosotros</h1><br>
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/tienda.html">Tienda</a></li>
+                <li><a href="../html/contacto.html">Contáctanos</a></li>
+                <li><a href="../html/formularios.html">Registro</a></li>
+            </ul>
+        </div>
+    </header>
+    <div align="center"><br>
+        <a class="whatsapp" aria-label="Contactanos por WhatsApp" href="https://wa.me/3143085064"> <img
+                 alt="Contactar por WhatsApp" src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" height="250px" 
+                 width="250px" /></a><br>
+                
+    </div>
+    <div align="center">
+        <a class="gmail" href="mailto:jdgaleanon@ufpso.edu.co?Subject=Buenas%20estoy%20interesado%20en%20una%20jersey%20porfavor">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Icono de Gmail" height="250px"
+                width="250px"></a><br>
+    </div><br><br><br><br><br><br><br><br><br><br>
+    <!--Pie de pagina-->
+    <footer id="pie">
+        <div align="center">
+            <p>Juan Daniel Galeano</p>
+            <p>Cod: 192016</p>
+            <span id="año-actual"></span>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script>
+            function cargarpagina(){
+            $("#validar").hide();
+            Swal.fire('Esta es nuestra información para que te contactes mejor con nosotros.');
+        }
+
+</script>
+</body>
+
+</html>
